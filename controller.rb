@@ -21,7 +21,7 @@ class Controller
       elsif(input == 'list')
         list_all
       else
-        echo_output
+        echo_output(input)
       end
     end
   end
@@ -41,7 +41,7 @@ class Controller
     list_all
   end
 
-  def echo_output
+  def echo_output(input)
     View.output_info(input)
   end
 

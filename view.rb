@@ -1,7 +1,7 @@
 class View
 
   def self.prompt_user
-    print "enter something (list, add, delete, exit or leave it blank): "
+    print "enter something (list, add, delete, exit or whatever you want): "
   end
 
   def self.display_exit_message
