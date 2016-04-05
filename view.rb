@@ -16,8 +16,14 @@ class View
     print "enter task to add: "
   end
 
-  def self.display_list(list)
-    list.display_tasks
+  def self.display_collection(collection)
+    if collection.empty?
+      puts "Nothing to print"
+    else
+      collection.each_with_index do |item, index|
+        puts "#{index+1}: #{item}"
+      end
+    end
   end
 
   def self.prompt_for_delete

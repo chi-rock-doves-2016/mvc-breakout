@@ -46,7 +46,7 @@ class Controller
   end
 
   def list_all
-    View.display_list(list)
+    View.display_collection(list)
   end
 
   def delete_item
